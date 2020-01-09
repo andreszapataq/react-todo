@@ -6,6 +6,7 @@ import './App.css';
 
 class App extends Component {
   state = {
+    numero: 4,
     todos: [
       {
         id: 1,
@@ -43,7 +44,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Todos todos={this.state.todos} markComplete={this.markComplete} delTodo={this.delTodo} />
+        <Todos todos={this.state.todos} markComplete={this.markComplete} delTodo={this.delTodo} caca={this.state.numero} />
         <Footer />
       </div>
     );
